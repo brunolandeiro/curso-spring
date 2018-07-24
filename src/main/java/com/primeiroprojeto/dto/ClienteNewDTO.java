@@ -2,8 +2,6 @@ package com.primeiroprojeto.dto;
 
 import java.io.Serializable;
 
-import javax.persistence.Id;
-
 public class ClienteNewDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
