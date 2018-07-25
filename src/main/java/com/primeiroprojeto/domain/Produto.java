@@ -49,6 +49,14 @@ public class Produto implements Serializable {
 		this.preco = preco;
 	}
 	
+	public double getValorTotal() {
+		double soma = 0.0;
+		for(ItemPedido i : itens) {
+			soma = soma + i.getSubTotal();
+		}
+		return soma;
+	}
+	
 	@JsonIgnore
 	public List<Pedido> getPedidos(){
 		List<Pedido> lista = new ArrayList<>();
